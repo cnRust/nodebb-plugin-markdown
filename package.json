@@ -1,21 +1,23 @@
 {
-  "name": "nodebb-plugin-markdown",
+  "name": "nodebb-plugin-markdown-cnrust",
   "version": "7.1.1",
-  "description": "A Markdown parser for NodeBB",
+  "description": "A Markdown parser for NodeBB(cnrust.org) with specific language highligh",
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/julianlam/nodebb-plugin-markdown"
+    "url": "https://github.com/cnRust/nodebb-plugin-markdown-cnrust"
   },
   "keywords": [
     "nodebb",
     "plugin",
-    "markdown"
+    "markdown",
+    "cnrust",
+    "customize"
   ],
-  "author": "Julian Lam <julian@designcreateplay.com>",
+  "author": "ole3021(Oliver.W)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/julianlam/nodebb-plugin-markdown/issues"
+    "url": "https://github.com/cnRust/nodebb-plugin-markdown-cnrust/issues"
   },
   "dependencies": {
     "markdown-it": "^6.0.0"
