@@ -1,6 +1,6 @@
 define('admin/plugins/markdown', ['settings'], function(Settings) {
 	var Markdown = {};
-	
+
 	Markdown.init = function() {
 		Settings.load('markdown', $('.markdown-settings'), function(err, settings) {
 			var defaults = {
@@ -13,9 +13,9 @@ define('admin/plugins/markdown', ['settings'], function(Settings) {
 				'nofollow': true,
 				'typographer': false,
 				'highlight': true,
-				'highlightTheme': 'railscasts.css'
+				'highlightTheme': 'dracula.css'
 			};
-	
+
 			// Set defaults
 			for(var setting in defaults) {
 				if (!settings.hasOwnProperty(setting)) {
@@ -41,7 +41,7 @@ define('admin/plugins/markdown', ['settings'], function(Settings) {
 				})
 			});
 		});
-		
+
 		// Warning for "html" option
 		$('#html').on('change', function() {
 			var inputEl = $(this);
@@ -54,6 +54,6 @@ define('admin/plugins/markdown', ['settings'], function(Settings) {
 			}
 		});
 	};
-	
+
 	return Markdown;
 });

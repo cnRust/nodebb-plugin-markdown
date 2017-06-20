@@ -1,6 +1,6 @@
 {
   "name": "nodebb-plugin-markdown-cnrust",
-  "version": "7.1.1",
+  "version": "7.1.2",
   "description": "A Markdown parser for NodeBB(cnrust.org) with specific language highligh",
   "main": "index.js",
   "repository": {

@@ -33,7 +33,7 @@
 			getConfig: function(config, callback) {
 				config.markdown = {
 					highlight: Markdown.highlight ? 1 : 0,
-					theme: Markdown.config.highlightTheme || 'railscasts.css'
+					theme: Markdown.config.highlightTheme || 'dracula.css'
 				};
 				callback(null, config);
 			},
@@ -42,7 +42,7 @@
 				links.push({
 					rel: "stylesheet",
 					type: "",
-					href: nconf.get('relative_path') + '/plugins/nodebb-plugin-markdown/styles/' + (Markdown.config.highlightTheme || 'railscasts.css')
+					href: nconf.get('relative_path') + '/plugins/nodebb-plugin-markdown-cnrust/styles/' + (Markdown.config.highlightTheme || 'dracula.css')
 				});
 
 				var prefetch = ['/assets/src/modules/highlight.js', '/assets/language/' + (meta.config.defaultLang || 'en-GB') + '/markdown.json'];
@@ -71,7 +71,7 @@
 						'linkify': true,
 						'typographer': false,
 						'highlight': true,
-						'highlightTheme': 'railscasts.css',
+						'highlightTheme': 'dracula.css',
 						'externalBlank': false,
 						'nofollow': true
 					};
@@ -274,4 +274,3 @@
 
 	module.exports = Markdown;
 })();
-
